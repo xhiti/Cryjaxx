@@ -1,0 +1,284 @@
+
+ul {
+  margin: 0;
+  padding: 0; }
+  ul li {
+    margin: 0;
+    padding: 0; }
+
+.bg-overlay {
+  position: relative;
+  z-index: 1; }
+  .bg-overlay::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.4); }
+
+.bg-img {
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important; }
+
+
+/* :: 10.0 Follow CSS */
+.single-instagram-item {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms; }
+  .single-instagram-item img {
+    width: 100%;
+    -webkit-transition-duration: 1500ms;
+    -o-transition-duration: 1500ms;
+    transition-duration: 1500ms; }
+  .single-instagram-item .instagram-hover-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(1, 14, 33, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms; }
+    .single-instagram-item .instagram-hover-content a {
+      text-align: center; }
+      .single-instagram-item .instagram-hover-content a i {
+        color: #ffffff;
+        font-size: 32px;
+        display: block;
+        margin-bottom: 15px; }
+      .single-instagram-item .instagram-hover-content a span {
+        font-size: 14px;
+        margin-bottom: 0;
+        color: #ffffff; }
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+          .single-instagram-item .instagram-hover-content a span {
+            font-size: 12px; } }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .single-instagram-item .instagram-hover-content a span {
+            font-size: 12px; } }
+        @media only screen and (max-width: 767px) {
+          .single-instagram-item .instagram-hover-content a span {
+            font-size: 12px; } }
+  .single-instagram-item:hover img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); }
+  .single-instagram-item:hover .instagram-hover-content {
+    opacity: 1;
+    visibility: visible; }
+
+.instagram-gallery-single-item:hover .instagram-hover-content .zoom-img {
+  margin-top: 0;
+  opacity: 1; }
+
+
+/* :: 12.0 Breadcrumb CSS */
+.breadcrumb-area {
+  position: relative;
+  z-index: 1;
+  height: 370px; }
+  @media only screen and (max-width: 767px) {
+    .breadcrumb-area {
+      height: 240px; } }
+  .breadcrumb-area .page-title {
+    color: #ffffff;
+    font-size: 36px; }
+    @media only screen and (max-width: 767px) {
+      .breadcrumb-area .page-title {
+        font-size: 24px; } }
+
+.breadcrumb-content {
+  position: relative;
+  z-index: 1;
+  margin-top: 70px; }
+  .breadcrumb-content .breadcrumb {
+    padding: 0;
+    background-color: transparent;
+    margin-bottom: 0; }
+    .breadcrumb-content .breadcrumb .breadcrumb-item {
+      color: #fc6060;
+      font-weight: 400;
+      font-size: 16px; }
+      .breadcrumb-content .breadcrumb .breadcrumb-item a {
+        font-size: 16px;
+        color: #ffffff;
+        font-weight: 400; }
+        .breadcrumb-content .breadcrumb .breadcrumb-item a:hover, .breadcrumb-content .breadcrumb .breadcrumb-item a:focus {
+          color: #fc6060; }
+    .breadcrumb-content .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+      content: '\f105';
+      color: #ffffff;
+      font-family: "FontAwesome"; }
+
+.breadcrumb-area.blog {
+  height: 550px; }
+  .breadcrumb-area.blog .breadcrumb-content .post-catagory {
+    padding: 2px 15px;
+    border-radius: 2px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #fc6060;
+    font-weight: 500;
+    margin-bottom: 15px; }
+    .breadcrumb-area.blog .breadcrumb-content .post-catagory:hover, .breadcrumb-area.blog .breadcrumb-content .post-catagory:focus {
+      font-weight: 500;
+      background-color: #000000; }
+  .breadcrumb-area.blog .breadcrumb-content .page-title {
+    display: block;
+    font-size: 48px;
+    margin-bottom: 20px; }
+    @media only screen and (max-width: 767px) {
+      .breadcrumb-area.blog .breadcrumb-content .page-title {
+        font-size: 30px; } }
+  .breadcrumb-area.blog .breadcrumb-content .post-meta {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 5px; }
+    .breadcrumb-area.blog .breadcrumb-content .post-meta a {
+      position: relative;
+      z-index: 1;
+      font-size: 16px;
+      color: #ffffff;
+      font-weight: 500;
+      margin-right: 21px; }
+      @media only screen and (max-width: 767px) {
+        .breadcrumb-area.blog .breadcrumb-content .post-meta a {
+          font-size: 13px; } }
+      .breadcrumb-area.blog .breadcrumb-content .post-meta a::after {
+        content: '|';
+        position: absolute;
+        top: 0;
+        right: -11px;
+        z-index: 1; }
+      .breadcrumb-area.blog .breadcrumb-content .post-meta a:last-child::after {
+        display: none; }
+      .breadcrumb-area.blog .breadcrumb-content .post-meta a:hover, .breadcrumb-area.blog .breadcrumb-content .post-meta a:focus {
+        color: #fc6060; }
+        .breadcrumb-area.blog .breadcrumb-content .post-meta a:hover::after, .breadcrumb-area.blog .breadcrumb-content .post-meta a:focus::after {
+          color: #ffffff; }
+
+/* :: 15.0 Gallery CSS */
+.alime-portfolio-area {
+  position: relative;
+  z-index: 1; }
+  .alime-portfolio-area .container-fluid {
+    padding-right: 10%;
+    padding-left: 10%; }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .alime-portfolio-area .container-fluid {
+        padding-right: 5%;
+        padding-left: 5%; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .alime-portfolio-area .container-fluid {
+        padding-right: 5%;
+        padding-left: 5%; } }
+    @media only screen and (max-width: 767px) {
+      .alime-portfolio-area .container-fluid {
+        padding-right: 5%;
+        padding-left: 5%; } }
+
+.alime-projects-menu {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 40px; }
+  .alime-projects-menu .portfolio-menu .btn {
+    color: #010E21!important;
+    position: relative;
+    z-index: 1;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 0;
+    margin: 0 25px;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms; }
+    @media only screen and (max-width: 767px) {
+      .alime-projects-menu .portfolio-menu .btn {
+        font-size: 14px;
+        margin: 0 5px; } }
+    .alime-projects-menu .portfolio-menu .btn::after {
+      -webkit-transition-duration: 500ms;
+      -o-transition-duration: 500ms;
+      transition-duration: 500ms;
+      position: absolute;
+      width: 0%;
+      height: 3px;
+      background-color: #27aae1;
+      content: '';
+      bottom: -5px;
+      left: 0;
+      right: 0;
+      z-index: 1; }
+    .alime-projects-menu .portfolio-menu .btn.active::after {
+      width: 100%; }
+
+.single-portfolio-content {
+  position: relative;
+  z-index: 1;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+  overflow: hidden; }
+  .single-portfolio-content img {
+    width: 100%;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms; }
+  .single-portfolio-content .hover-content {
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10; }
+    .single-portfolio-content .hover-content a {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: 0;
+      margin-left: -26px;
+      z-index: 100;
+      display: inline-block;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background-color: #010E21;
+      text-align: center;
+      line-height: 52px;
+      font-size: 30px;
+      color: #27aae1; }
+      .single-portfolio-content .hover-content a:hover, .single-portfolio-content .hover-content a:focus {
+        background-color: #000000; }
+  .single-portfolio-content:hover img, .single-portfolio-content:focus img {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2); }
+  .single-portfolio-content:hover .hover-content, .single-portfolio-content:focus .hover-content {
+    opacity: 1;
+    visibility: visible; }
+    .single-portfolio-content:hover .hover-content a, .single-portfolio-content:focus .hover-content a {
+      margin-top: -26px; }
